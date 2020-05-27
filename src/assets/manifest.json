@@ -1,0 +1,41 @@
+{
+  "id": "org.emmaodia.supportsmes",
+  "version": "0.0.1",
+  "version_code": 1,
+  "name": "supportsmes",
+  "short_name": "supportsmes",
+  "short_description": "Support Small and Medium size Businesses",
+  "description": "A dApp where users can choose a form of support for SMEs by either donating to them or volunteering with them.",
+  "start_url": "index.html",
+  "type": "app",
+  "start_visible": "hide",
+  "category": "finance",
+  "icons": [
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "author": {
+    "name": "Emma Odia",
+    "email": "odia.emma@gmail.com",
+    "website": ""
+  },
+  "default_locale": "en",
+  "plugins": [
+    "Device",
+    "NetworkStatus"
+  ],
+  "urls": [
+    "http://www.yourappserver.com/*"
+  ],
+  "background_color": "#4e8ef7",
+  "theme_display": "show",
+  "theme_color": "#4e8ef7"
+}
