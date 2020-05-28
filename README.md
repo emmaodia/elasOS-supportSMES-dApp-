@@ -24,7 +24,7 @@ Instructions to get the project running successfully on your local machine.
 
 ### Prerequisites
 You need to have these installed before cloning the project
-* [NodeJS](https://nodejs.org/en/download/) atleast v8.11.2
+* [NodeJS](https://nodejs.org/en/download/) at least v8.11.2
 
 
 
@@ -34,19 +34,18 @@ You need to have these installed before cloning the project
 * AngularJS
 
 ### How To Install
-* Clone from github
-  ```git clone https://github.com/emmaodia/enterpair-api.git```
-* CD into the directory
+* Clone from github<br>
+  ```git clone https://github.com/emmaodia/elasOS-supportSMES-dApp.git
+  ```
+* CD into the directory<br>
   ```cd enterpair```
-* Install dependencies
-  ```npm install```
-
+* To deploy and run on android 
+```$ trinity-cli run -p android --nodebug
+```
 
 ### How To Run
-  ```npm run dev```
-
-### How To Test
-  ```npm run test```
+  ```$ trinity-cli run -p android --nodebug
+  ```
 
 
 ## License

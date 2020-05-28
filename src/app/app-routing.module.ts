@@ -8,7 +8,8 @@ import { HomePage } from './pages/home/home';
 const routes: Routes = [
   { path: 'tab1Root', component: HomePage },
   { path: 'tab2Root', component: AboutPage },
-  { path: 'tab3Root', component: ContactPage }
+  { path: 'tab3Root', component: ContactPage },
+  { path: 'view-shop', loadChildren: './view-shop/view-shop.module#ViewShopPageModule' }
 ];
 
 @NgModule({
