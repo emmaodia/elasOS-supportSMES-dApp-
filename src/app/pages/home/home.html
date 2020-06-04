@@ -10,15 +10,18 @@
       
         <ion-card-content>
             <ion-thumbnail slot="start">
-                <ion-img [src]="item.src"></ion-img>
+                <ion-img src="http://www.tocci.com/wp-content/uploads/2015/03/crowdfunding_feature.jpg"></ion-img>
+                <!-- <ion-img src="{{ photo.webviewPath }}"></ion-img> -->
             </ion-thumbnail>
           We need support with preparing our Chickens and will to barter food for work.
           We also need Drivers to go do items drop off
         </ion-card-content>
         <ion-item>
-            <ion-button href="#" color="success">Donate</ion-button>
+            <ion-button href="#" color="success" (click)="openModal()">Donate</ion-button>
             <ion-button color="secondary" expand="block" slot="end">Volunteer</ion-button>
-          </ion-item>
+            
+        </ion-item>
+        <p *ngIf="dataReturned">{{dataReturned}}</p>
       </ion-card>
       <ion-card>
         <ion-card-header>
@@ -27,8 +30,7 @@
       
         <ion-card-content>
             <ion-thumbnail slot="start">
-                <ion-img [src]="item.src"></ion-img>
-            </ion-thumbnail>
+                <ion-img src="http://www.tocci.com/wp-content/uploads/2015/03/crowdfunding_feature.jpg"></ion-img>           </ion-thumbnail>
           We need volunteers who are willing to be trained in the use of our products and
            who will help demonstrate it's use using videos.
         </ion-card-content>
@@ -44,7 +46,7 @@
       
         <ion-card-content>
             <ion-thumbnail slot="start">
-                <ion-img [src]="item.src"></ion-img>
+                <ion-img src="http://www.tocci.com/wp-content/uploads/2015/03/crowdfunding_feature.jpg"></ion-img>
             </ion-thumbnail>
           We are in need of volunteers to train who will become business partners
           and go deliver home service to our clients.
@@ -61,7 +63,7 @@
       
         <ion-card-content>
             <ion-thumbnail slot="start">
-                <ion-img [src]="item.src"></ion-img>
+                <ion-img src="http://www.tocci.com/wp-content/uploads/2015/03/crowdfunding_feature.jpg"></ion-img>
             </ion-thumbnail>
           We need donations to survive these times as people do not
           patronize us due to rascism.
@@ -78,7 +80,7 @@
       
         <ion-card-content>
             <ion-thumbnail slot="start">
-                <ion-img [src]="item.src"></ion-img>
+                <ion-img src="http://www.tocci.com/wp-content/uploads/2015/03/crowdfunding_feature.jpg"></ion-img>
             </ion-thumbnail>
           We need delivery volunteers.
         </ion-card-content>
