@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: 'tab1Root', component: HomePage },
   { path: 'tab2Root', component: AboutPage },
   { path: 'tab3Root', component: ContactPage },
-  { path: 'view-shop', loadChildren: './view-shop/view-shop.module#ViewShopPageModule' }
+  { path: 'my-modal', loadChildren: './modals/my-modal/my-modal.module#MyModalPageModule' },
+  // { path: 'view-shop', loadChildren: './view-shop/view-shop.module#ViewShopPageModule' }
 ];
 
 @NgModule({
