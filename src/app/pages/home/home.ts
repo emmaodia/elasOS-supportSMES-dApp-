@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
-// import { ModalController } from '@ionic/angular';
-// import { ModalPage } from './modal';
+import { ModalController } from '@ionic/angular';
+import { MyModalPage } from '../../modals/my-modal/my-modal.page';
 
 
 declare let appManager: AppManagerPlugin.AppManager;
@@ -13,18 +13,29 @@ declare let titleBarManager: TitleBarPlugin.TitleBarManager;
   styleUrls: ['./home.scss']
 })
 export class HomePage {
-  constructor(public navCtrl: NavController) {
+  dataReturned: any;
+  constructor(public navCtrl: NavController, public modalController: ModalController) {
   }
 
-  // public modalController: ModalController
+  async openModal() {
+    const modal = await this.modalController.create({
+      component: MyModalPage,
+      componentProps: {
+        "paramID": 123,
+        "paramTitle": "Test Title"
+      }
+    });
 
-  // async presentModal() {
-  //   const modal = await this.modalController.create({
-  //     component: ModalPage,
-  //     cssClass: 'my-custom-class'
-  //   });
-  //   return await modal.present();
-  // }
+    modal.onDidDismiss().then((dataReturned) => {
+      if (dataReturned !== null) {
+        this.dataReturned = dataReturned.data;
+        //alert('Modal Sent Data :'+ dataReturned);
+      }
+    });
+
+    return await modal.present();
+  }
+
 
   ionViewDidEnter() {
     // When the main screen is ready to be displayed, ask the app manager to make the app visible,
@@ -48,24 +59,3 @@ export class HomePage {
 //   email:"Right-arm medium"
 // }]
 }
-
-
-
-// @Component({
-//   selector: 'modal-example',
-//   templateUrl: 'modal-example.html',
-//   styleUrls: ['./modal-example.css']
-// })
-// export class ModalExample {
-//   constructor(public modalController: ModalController) {
-
-//   }
-
-//   async presentModal() {
-//     const modal = await this.modalController.create({
-//       component: ModalPage,
-//       cssClass: 'my-custom-class'
-//     });
-//     return await modal.present();
-//   }
-// }
