@@ -17,7 +17,7 @@ The dApp enables users to choose a form of support for SMEs by either donating t
 * Business can create a campaign requesting for funding or  volunteer support.
 * Users can choose a Business to donate to or to support.
 
-![App Screen](smedAppscreen.png)
+![App Screen](smedAppscreen.png) <br /> ![App Capsule](appScreen1.png) ![Capsule Screen](capsuleScreen.png)
 
 
 ## Getting Started
